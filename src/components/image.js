@@ -14,7 +14,7 @@ import Img from "gatsby-image"
  */
 
 const Image = () => (
-  <StaticQuery
+  <StaticQuery data-testid = "home-image"
     query={graphql`
       query {
         placeholderImage: file(relativePath: { eq: "Heart.jpg" }) {
